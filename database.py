@@ -1,9 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from sqlalchemy import String, Integer, Column, UniqueConstraint
+import os
 
-
-DB_URL = "sqlite:///./test.db"
+DB_URL = os.environ.get("DATABASE_URL")
 
 engine = create_engine(
     DB_URL,
