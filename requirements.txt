@@ -2,3 +2,4 @@ fastapi
 uvicorn[standart]
 pydantic
 SQLAlchemy
+psycopg2
